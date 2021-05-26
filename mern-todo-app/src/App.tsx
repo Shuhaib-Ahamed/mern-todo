@@ -1,10 +1,9 @@
 import React from 'react'
 import './styles/App.scss'
 
-function App() {
+function App () {
   return (
     <div>
-      
     </div>
   )
 }
