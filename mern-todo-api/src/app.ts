@@ -19,7 +19,7 @@ app.use(cors());
 app.use(routes);
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, World!');
+  res.send('MERN-TODO-APP!');
 });
 
 mongoose.set('useFindAndModify', true);
