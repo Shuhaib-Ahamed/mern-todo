@@ -1,11 +1,21 @@
-import React from 'react'
-import './styles/App.scss'
+import React, { useState } from 'react'
 
-function App () {
+import Header from './components/Header'
+import TaskList from './components/TaskList'
+import Form from './components/Form'
+import PlusButton from './components/PlusButton'
+
+const App: React.FC = () => {
+  const [showForm, setShowForm] = useState(false)
+
   return (
-    <div>
-    </div>
-  )
-}
+    <main className="container relative mx-auto max-w-lg p-4 box-border min-h-screen">
+      <Header />
+      <TaskList />
+      <Form inProp={showForm} onClose={() => setShowForm(false)} />
+      <PlusButton onClick={() => setShowForm(!showForm)} />
+    </main>
+  );
+};
 
 export default App

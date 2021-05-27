@@ -1,11 +1,25 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
-import './styles/index.scss'
-import App from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import webFontLoader from 'webfontloader';
+import { QueryCache, ReactQueryCacheProvider } from 'react-query'
+
+import './styles/App.scss';
+import App from './App';
+
+const queryCache = new QueryCache()
+
+webFontLoader.load({
+  google: {
+    families: ['Raleway:400,700:latin', 'Montserrat:700:latin']
+  }
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>,
+  <>
+    <ReactQueryCacheProvider queryCache={queryCache}>
+      <App />
+    </ReactQueryCacheProvider>
+    {/* <ReactQueryDevtools initialIsOpen /> */}
+  </>,
   document.getElementById('root')
-)
+);
