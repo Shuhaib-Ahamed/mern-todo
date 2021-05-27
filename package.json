@@ -10,6 +10,9 @@
     "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
