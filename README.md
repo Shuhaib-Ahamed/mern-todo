@@ -4,6 +4,8 @@ The app includes the following features Adding a todo, Deleting a todo, Promptin
 ### TASKLIST
 ![alt text](https://firebasestorage.googleapis.com/v0/b/shuhaib-ahamed.appspot.com/o/TASKLIST.png?alt=media&token=84300567-973f-49b8-9317-16fdaa365e96)
 
+
+## Instructions
 Client
 type the following in the CMD
 `cd mern-todo-app`
